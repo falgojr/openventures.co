@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Ventures</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 1000;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0047ff;
+    }
+    .hero {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: left;
+      animation: fadeIn 1.2s ease-in;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+    .cta {
+      background: #0047ff;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin: 10px 0 0 0;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+    .contact {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .contact h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact label {
+      margin-bottom: 5px;
+    }
+    .contact input,
+    .contact textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact button {
+      width: 100px;
+      background-color: #0047ff;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">openventures</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#product">Product</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <h1>Full transparency at a glance</h1>
+    <p><strong>Software to power radical openness.</strong></p>
+    <p>Open Ventures is the technology behind The Open Cafe. Our mission is to help organizations, public and private, operate with radical transparency, real-time accountability, and community trust.</p>
+    <ul>
+      <li>Share financials, costs, and impact live</li>
+      <li>Track metrics in real time</li>
+      <li>Involve the community</li>
+    </ul>
+    <a href="#contact" class="cta">Get started</a>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>
